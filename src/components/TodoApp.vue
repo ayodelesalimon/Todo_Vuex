@@ -38,6 +38,8 @@ export default {
 <style scoped>
 .section{
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .title{
     font-size: 30px;
@@ -61,6 +63,21 @@ export default {
     
 }
 .foot{
-   padding: 100px 250px;
+    margin-top: 10px;
+   
+}
+
+@media screen and (min-width:320px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+
+  .foot {
+  display: flex;
+    
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    
+   
+}
 }
 </style>
